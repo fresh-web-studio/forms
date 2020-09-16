@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Формы</title>
+</head>
+<body>
+
+<a href="#modal" class="button openModal">
+    <button>
+        <div class="btn">Заказать консультацию</div>
+    </button>
+</a>
+<div id="modal" class="modal">
+    <div>
+        <div>
+            <div id="block_tel">
+                <h3>Заказать консультацию</h3>
+                <div class="info">Оставьте ваши данные и мы свяжемся с Вами
+                    для консультации.</div>
+                <form id="callback_form">
+                    <fieldset>
+                        <legend>
+                            <label for="name" class="control-label">Имя</label>
+                        </legend>
+                        <div class="input-name anim">
+                            <input type="text" name="name" class="inputbox" id="name" value="" placeholder="Введите Ваше имя" >
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <label for="phone" class="control-label">Телефон</label>
+                        </legend>
+                        <div class="input-phone anim">
+                            <input type="tel" name="telephone" class="inputbox tel" id="phone" maxlength="18"  value="" placeholder="+7 (__) ___-__-__" >
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <label for="phone" class="control-label">Сообщение</label>
+                        </legend>
+                        <div class="input-text anim">
+                            <textarea rows="3" class="inputbox"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="checkbox"><label>
+                        <input type="checkbox"> Даю согласие на <a href="#">обработку персональных данных</a>
+                    </label></div>
+                    <div class="btn">
+                        <div id="send" class="btn">Отправить</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a href="#close" title="Закрыть">Закрыть</a>
+    </div>
+</div>
+</body>
+</html>
